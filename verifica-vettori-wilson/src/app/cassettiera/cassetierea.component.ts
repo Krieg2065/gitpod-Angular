@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cassetierea',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cassetierea.component.css']
 })
 export class CassetiereaComponent implements OnInit {
+names: string[]; 
 
-  constructor() { }
+  constructor() {
+    this.names = ["pino", "rino", "mino", "ugo" ];
+   }
 
   ngOnInit(): void {
   }
