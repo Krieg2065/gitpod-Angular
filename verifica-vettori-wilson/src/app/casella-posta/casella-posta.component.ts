@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-casella-posta',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./casella-posta.component.css']
 })
 export class CasellaPostaComponent implements OnInit {
+@Input() name : string = "";
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
