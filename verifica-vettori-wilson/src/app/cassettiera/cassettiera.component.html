@@ -1,5 +1,5 @@
-<ul>
-    <li *ngFor = "let name of names">
+<ul class = "card">
+    <li class = "card mb-2 bg-warning border-dark text-dark" *ngFor = "let name of names">
         <app-casella-posta [name] = "name"> </app-casella-posta>
     </li>
 </ul>
